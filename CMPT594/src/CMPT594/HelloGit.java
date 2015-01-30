@@ -7,6 +7,7 @@ public class HelloGit {
 		System.out.println("Kevin's work PC here!");
 		System.out.println("Cici is here");
 		System.out.println("Andrew too.");
+		System.out.println("ZUP!!");
 	}
 
 }
