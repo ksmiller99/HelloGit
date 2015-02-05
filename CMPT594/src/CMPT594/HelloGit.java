@@ -8,7 +8,7 @@ public class HelloGit {
 		System.out.println("Cici is here");
 		System.out.println("Andrew too.");
 		System.out.println("ZUP!!");
-		System.out.println("Grrrrr");		
+		System.out.println("Grrrrr!!");		
 	}
 
 }
