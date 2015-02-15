@@ -38,6 +38,7 @@ public class HelloGit extends JFrame{
         JMenuItem openAction = new JMenuItem("Open");
         JMenuItem saveAction = new JMenuItem("Save");
         JMenu saveAsMenu = new JMenu("Save as...");
+        JMenuItem recentAction = new JMenuItem("Recent...");
         JMenuItem saveasGSAction = new JMenuItem("Grayscale");
         JMenuItem saveasRGBAction = new JMenuItem("Color...");
         JMenuItem newMosaicAction = new JMenuItem("New Mosaic...");
@@ -63,6 +64,7 @@ public class HelloGit extends JFrame{
         fileMenu.add(saveAsMenu);
         saveAsMenu.add(saveasGSAction);
         saveAsMenu.add(saveasRGBAction);
+        fileMenu.add(recentAction);
         fileMenu.add(newMosaicAction);
         fileMenu.add(closeAction);
         fileMenu.addSeparator();
@@ -94,6 +96,13 @@ public class HelloGit extends JFrame{
         saveasRGBAction.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
             	JOptionPane.showMessageDialog(null, "Color Picker will be here");                
+            }
+        });
+        
+        // Recent method
+        recentAction.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+            	JOptionPane.showMessageDialog(null, "Recent file list will be here.");                
             }
         });
         
