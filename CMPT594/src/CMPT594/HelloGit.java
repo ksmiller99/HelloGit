@@ -43,6 +43,7 @@ public class HelloGit extends JFrame{
         JMenuItem saveasRGBAction = new JMenuItem("Color...");
         JMenuItem newMosaicAction = new JMenuItem("New Mosaic...");
         JMenuItem closeAction = new JMenuItem("Close");
+        JMenuItem propertiesAction = new JMenuItem("Properties...");
         JMenuItem exitAction = new JMenuItem("Exit");
         
         //Edit menu
@@ -67,6 +68,7 @@ public class HelloGit extends JFrame{
         fileMenu.add(recentAction);
         fileMenu.add(newMosaicAction);
         fileMenu.add(closeAction);
+        fileMenu.add(propertiesAction);
         fileMenu.addSeparator();
         fileMenu.add(exitAction);
         
@@ -113,7 +115,14 @@ public class HelloGit extends JFrame{
             }
         });
         
-        // Close method
+        // Properties method
+        propertiesAction.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+            	JOptionPane.showMessageDialog(null, "Properties dialog will be here");                
+            }
+        });
+        
+        // Exit method
         exitAction.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
             	System.exit(0);                
