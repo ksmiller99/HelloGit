@@ -21,7 +21,7 @@ public class HelloGit extends JFrame{
         setSize(640, 480);
         
         // Creates a menubar for a JFrame
-        JMenuBar menuBar = new JMenuBar();
+        JMenuBar  menuBar = new JMenuBar();
         
         // Add the menubar to the frame
         setJMenuBar(menuBar);
